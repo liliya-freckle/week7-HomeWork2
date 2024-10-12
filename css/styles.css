@@ -1,0 +1,180 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Loto", sans-serif;
+    font-size: 1em;
+    }
+
+.container {
+    display: grid;
+    max-width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    
+}
+.img {
+    height: 100%;
+    object-fit: contain;
+}
+.header {
+    display: grid;
+    border: 1px solid rgb(160, 15, 160);
+    }
+
+
+
+.top_line {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    border: 1px solid rgb(150, 35, 173);
+    align-items: center;
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    border: 1px solid rgb(62, 166, 226);
+}
+
+.top_line-mobile {
+    display: none;
+    }
+    
+
+.banner {
+    display: flex;
+    
+}
+.title {
+    display: grid;
+    border: 1px solid rgb(240, 211, 51);
+    align-content: center;
+    align-items: center;
+    justify-items: center;
+
+    }
+
+.main {
+    display: grid;
+    
+}
+.about {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    padding-top: 50px;
+
+}
+
+.aside_picture {
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+}
+
+.images {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: flex-start;
+    border: 1px solid rgb(150, 35, 173);
+    }
+
+.offers {
+    display: grid;
+    
+}
+
+.offer_container {
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    border: 1px solid rgb(226, 156, 26);
+    }
+
+.footer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    background-color: rgb(78, 101, 129);
+    align-items: end;
+    color: azure;
+    padding: 60px;
+    font-size: smaller;
+    border: 1px solid rgb(37, 35, 173);
+        
+}
+.time {
+    display: grid;
+    grid-column: 3 / 4;
+    padding-top: 20px;
+    border: 1px solid rgb(35, 173, 35);
+}
+.contacts {
+    grid-column: 4 / 5;
+    padding-top: 20px;
+    border: 1px solid rgb(35, 168, 173);
+
+}
+
+
+@media screen and (max-width: 860px) {
+    * {
+        font-size: 0.95em;
+    }
+    .img {
+        height: 60%;
+    }
+
+    .aside_picture{ 
+        width: 100%; 
+    } 
+
+    
+    .images{
+        display: flex;
+        flex-direction: column; 
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media screen and (max-width: 415px) {
+    
+    .top_line {
+        display: none;
+    }
+
+    .top_line-mobile {
+        display: grid;
+        grid-template-columns: 20% repeat(2, 1fr);
+        align-items: center;
+        gap: 116px;
+        }
+    
+    .banner {
+        display: flex;
+        padding-top: 20px;
+        flex-direction: column;
+    }
+
+    .about {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    
+    .footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .offer_container {
+        display: flex;
+        flex-direction: column-reverse;
+        row-gap: 20px;
+    }
+    
+}
