@@ -5,6 +5,13 @@
     font-family: "Loto", sans-serif;
     font-size: 1em;
     }
+a {
+    text-decoration-line: none;
+    }
+
+a:hover {
+    cursor: pointer; 
+}
 
 .container {
     display: grid;
@@ -29,6 +36,9 @@
     grid-template-columns: 20% 80%;
     border: 1px solid rgb(150, 35, 173);
     align-items: center;
+}
+.text {
+    padding: 5px;
 }
 
 .nav {
@@ -55,9 +65,18 @@
     align-content: center;
     align-items: center;
     justify-items: center;
+    margin-left: 30px;
+    gap: 30px;
 
     }
 
+.title_title {
+    font-size: 1.3em;
+}
+.button {
+    padding: 30px;
+    
+}
 .main {
     display: grid;
     
