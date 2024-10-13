@@ -18,7 +18,11 @@ a:hover {
     max-width: 100%;
     text-align: center;
     margin: 0 auto;
-    
+        
+}
+
+h3 {
+    padding-top: 60px;
 }
 .img {
     height: 100%;
@@ -26,7 +30,7 @@ a:hover {
 }
 .header {
     display: grid;
-    border: 1px solid rgb(160, 15, 160);
+    /* border: 1px solid rgb(160, 15, 160); */
     }
 
 
@@ -34,7 +38,7 @@ a:hover {
 .top_line {
     display: grid;
     grid-template-columns: 20% 80%;
-    border: 1px solid rgb(150, 35, 173);
+    /* border: 1px solid rgb(150, 35, 173); */
     align-items: center;
 }
 .text {
@@ -47,7 +51,7 @@ a:hover {
     justify-content: space-around;
     align-items: center;
     list-style: none;
-    border: 1px solid rgb(62, 166, 226);
+    /* border: 1px solid rgb(62, 166, 226); */
 }
 
 .top_line-mobile {
@@ -61,7 +65,7 @@ a:hover {
 }
 .title {
     display: grid;
-    border: 1px solid rgb(240, 211, 51);
+    /* border: 1px solid rgb(240, 211, 51); */
     align-content: center;
     align-items: center;
     justify-items: center;
@@ -98,7 +102,7 @@ a:hover {
     display: grid;
     grid-template-columns: 1fr;
     align-items: flex-start;
-    border: 1px solid rgb(150, 35, 173);
+    /* border: 1px solid rgb(150, 35, 173); */
     }
 
 .offers {
@@ -110,7 +114,7 @@ a:hover {
     display: grid;
     align-items: center;
     grid-template-columns: repeat(2, 1fr);
-    border: 1px solid rgb(226, 156, 26);
+    /* border: 1px solid rgb(226, 156, 26); */
     }
 
 .footer {
@@ -121,19 +125,19 @@ a:hover {
     color: azure;
     padding: 60px;
     font-size: smaller;
-    border: 1px solid rgb(37, 35, 173);
+    /* border: 1px solid rgb(37, 35, 173); */
         
 }
 .time {
     display: grid;
     grid-column: 3 / 4;
     padding-top: 20px;
-    border: 1px solid rgb(35, 173, 35);
+    /* border: 1px solid rgb(35, 173, 35); */
 }
 .contacts {
     grid-column: 4 / 5;
     padding-top: 20px;
-    border: 1px solid rgb(35, 168, 173);
+    /* border: 1px solid rgb(35, 168, 173); */
 
 }
 
@@ -193,7 +197,11 @@ a:hover {
     .offer_container {
         display: flex;
         flex-direction: column-reverse;
-        row-gap: 20px;
+        row-gap: 40px;
+        padding-top: 20px;
     }
-    
+    .offer_container:nth-child(3) {
+        flex-direction: column;
+        padding-bottom: 20px;
+        }
 }
